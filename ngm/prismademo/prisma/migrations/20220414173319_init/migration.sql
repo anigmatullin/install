@@ -23,7 +23,8 @@ CREATE TABLE `User` (
 CREATE TABLE `Something` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `email` VARCHAR(191) NOT NULL,
-    `name` VARCHAR(191) NULL,
+    `rename` VARCHAR(191) NULL,
+    `tst` VARCHAR(191) NULL,
 
     UNIQUE INDEX `Something_email_key`(`email`),
     PRIMARY KEY (`id`)
