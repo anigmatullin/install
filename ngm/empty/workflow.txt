@@ -1,5 +1,6 @@
 
-install prisma/create package: npm install
+install prisma/create package: copy this folder & npm install
+    or cleaner: npx prisma init
 edit .env/DATABASE_URL
 
 while not happy:
