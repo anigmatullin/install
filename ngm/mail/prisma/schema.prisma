@@ -1,0 +1,17 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Maillog {
+  id        Int     @id @default(autoincrement())
+  src_ip     String?
+  src_port   Int?
+  helo_name String
+  sender String
+  recipients String
+}
