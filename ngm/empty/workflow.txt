@@ -5,6 +5,8 @@ edit .env/DATABASE_URL
 while not happy:
     edit schema/models
     npx prisma migrate dev --name <name>
+    if not using migrations (yet) - run prisma generate manually:
+        npx prisma generate
     check data: npx prisma studio
     write some code:
         at least some sample: crud code
