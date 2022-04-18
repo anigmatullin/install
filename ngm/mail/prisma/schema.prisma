@@ -14,4 +14,12 @@ model Maillog {
   helo_name String
   sender String
   recipients String
+  session_id String @default("")
+  tls Int @default(0)
+  instance String @default("")
+  size Int @default(0)
+  created_at DateTime @default(now())
+  subject String @default("")
+  sender_domain String @default("")
+  recipients_domains String @default("")
 }
