@@ -23,3 +23,19 @@ model Maillog {
   sender_domain String @default("")
   recipients_domains String @default("")
 }
+
+model Header {
+  id Int @id @default(autoincrement())
+  mail_id Int @default(0)
+  name String  @default("")
+  value String  @default("")
+}
+
+model Attach {
+  id Int @id @default(autoincrement())
+  mail_id Int @default(0)
+  name String  @default("")
+  filetype String  @default("")
+  hash String  @default("")
+  size Int @default(0)
+}
