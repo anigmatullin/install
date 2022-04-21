@@ -20,6 +20,14 @@ model Maillog {
   size Int @default(0)
   created_at DateTime @default(now())
   subject String @default("")
+
+  cc String @default("")
+  bcc String @default("")
+  attach_count String @default("")
+  dns_ptr String @default("")
+  dns_mx String @default("")
+  dns_rbl String @default("")
+
   sender_domain String @default("")
   recipients_domains String @default("")
 }
