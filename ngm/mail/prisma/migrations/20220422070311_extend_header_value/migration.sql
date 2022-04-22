@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `Header` MODIFY `value` VARCHAR(1024) NOT NULL DEFAULT '';
