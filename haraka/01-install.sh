@@ -13,7 +13,6 @@ sudo apt install swaks
 
 swaks -v
 
-
 sudo npm install -g pm2
 
 pm2
