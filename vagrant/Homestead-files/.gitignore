@@ -1,0 +1,9 @@
+/vendor
+/.vagrant
+/aliases
+/mysqldump.sql.gz
+/mysql_backup
+/postgres_backup
+.phpunit.result.cache
+wsl-init.log
+.backup/*

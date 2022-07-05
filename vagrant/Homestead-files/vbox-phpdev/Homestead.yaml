@@ -1,0 +1,50 @@
+---
+ip: "10.0.0.3"
+memory: 2048
+cpus: 2
+provider: virtualbox
+
+authorize: ~/.ssh/id_ed25519.pub
+
+keys:
+    - ~/.ssh/id_ed25519
+
+folders:
+    - map: /Users/aibulat/Dropbox/git/phpdev
+      to: /phpdev
+
+sites:
+    - map: eq.test
+      to: /opt/quarantine/web
+
+databases:
+    - eq
+
+features:
+    - mysql: true
+    - mariadb: false
+    - postgresql: false
+    - ohmyzsh: true
+    - webdriver: false
+
+#services:
+#    - enabled:
+#        - "postgresql@12-main"
+#    - disabled:
+#        - "postgresql@11-main"
+
+#ports:
+#    - send: 33060 # MySQL/MariaDB
+#      to: 3306
+#    - send: 4040
+#      to: 4040
+#    - send: 54320 # PostgreSQL
+#      to: 5432
+#    - send: 8025 # Mailhog
+#      to: 8025
+#    - send: 9600
+#      to: 9600
+#    - send: 27017
+#      to: 27017
+
+
